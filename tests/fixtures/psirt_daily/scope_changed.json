@@ -1,0 +1,169 @@
+{
+  "schema_version": "psirt-daily-gate1/1",
+  "synthetic": true,
+  "description": "All CVEs, products, people, states and dates are fabricated test data. NOT FOR PRODUCTION.",
+  "sources": {
+    "kev": {
+      "synthetic": true,
+      "mode": "fixture",
+      "status": "SUCCESS",
+      "observed_at": "2026-10-16T09:00:00+08:00",
+      "source_updated_at": "2026-10-16T08:30:00+08:00",
+      "scope": {
+        "dataset": "synthetic-demo-only",
+        "selection": "kev-all-demo-records"
+      },
+      "source_version": "synthetic-kev-json/1",
+      "schema_version": "fixture-records/1",
+      "rule_version": "demo-filter/1",
+      "completeness": {
+        "complete": true,
+        "expected_count": 2,
+        "pages_received": 1,
+        "pagination_exhausted": true
+      },
+      "raw": {
+        "catalogVersion": "synthetic-release-2",
+        "dateReleased": "2026-10-16T00:30:00Z",
+        "count": 2,
+        "vulnerabilities": [
+          {
+            "cveID": "CVE-2099-90001",
+            "product": "SYNTHETIC-DEMO",
+            "notes": "new synthetic note",
+            "dateAdded": "2026-10-15"
+          },
+          {
+            "cveID": "CVE-2099-90003",
+            "product": "SYNTHETIC-ADDED-DEMO"
+          }
+        ]
+      }
+    },
+    "salesforce": {
+      "synthetic": true,
+      "mode": "fixture",
+      "status": "SUCCESS",
+      "observed_at": "2026-10-16T09:00:00+08:00",
+      "source_updated_at": "2026-10-16T08:30:00+08:00",
+      "scope": {
+        "dataset": "synthetic-demo-only",
+        "selection": "salesforce-all-demo-records"
+      },
+      "source_version": "synthetic-sf-v58.0",
+      "schema_version": "fixture-records/1",
+      "rule_version": "demo-filter/1",
+      "completeness": {
+        "complete": true,
+        "expected_count": 2,
+        "pages_received": 1,
+        "pagination_exhausted": true
+      },
+      "raw": [
+        {
+          "id": "SYNTHETIC-SF-001",
+          "status_raw": "Reopened",
+          "owner": "DEMO-PSIRT",
+          "jira_refs": [
+            "SYNTHETIC-JIRA-001"
+          ]
+        },
+        {
+          "id": "SYNTHETIC-SALESFORCE-003",
+          "status_raw": "New synthetic observation"
+        }
+      ]
+    },
+    "dt": {
+      "synthetic": true,
+      "mode": "fixture",
+      "status": "SUCCESS",
+      "observed_at": "2026-10-16T09:00:00+08:00",
+      "source_updated_at": "2026-10-16T08:30:00+08:00",
+      "scope": {
+        "dataset": "synthetic-demo-only",
+        "selection": "different-demo-project-scope"
+      },
+      "source_version": "synthetic-dt-5.1.1",
+      "schema_version": "fixture-records/1",
+      "rule_version": "demo-filter/1",
+      "completeness": {
+        "complete": true,
+        "expected_count": 2,
+        "pages_received": 1,
+        "pagination_exhausted": true
+      },
+      "raw": [
+        {
+          "id": "DEMO-PROJECT/DEMO-COMPONENT/CVE-2099-90001",
+          "project_uuid": "DEMO-PROJECT",
+          "component_uuid": "DEMO-COMPONENT",
+          "vuln_id": "CVE-2099-90001",
+          "analysis_state_raw": "IN_TRIAGE",
+          "suppressed": false,
+          "product_mapping": "UNKNOWN",
+          "purl": null,
+          "cpe": null,
+          "bom_import_time": "2026-10-14T10:00:00+08:00",
+          "analyzer": "synthetic-analyzer/1"
+        },
+        {
+          "id": "SYNTHETIC-DT-003",
+          "status_raw": "New synthetic observation"
+        }
+      ]
+    },
+    "jira": {
+      "synthetic": true,
+      "mode": "fixture",
+      "status": "SUCCESS",
+      "observed_at": "2026-10-16T09:00:00+08:00",
+      "source_updated_at": "2026-10-16T08:30:00+08:00",
+      "scope": {
+        "dataset": "synthetic-demo-only",
+        "selection": "jira-all-demo-records"
+      },
+      "source_version": "synthetic-jira-contract/1",
+      "schema_version": "fixture-records/1",
+      "rule_version": "demo-filter/1",
+      "completeness": {
+        "complete": true,
+        "expected_count": 2,
+        "pages_received": 1,
+        "pagination_exhausted": true
+      },
+      "raw": [
+        {
+          "id": "SYNTHETIC-JIRA-001",
+          "status_raw": "In Progress",
+          "owner": "DEMO-RD (not a real assignment)",
+          "comments": [
+            "Synthetic request for build evidence; status unchanged"
+          ]
+        },
+        {
+          "id": "SYNTHETIC-JIRA-003",
+          "status_raw": "New synthetic observation"
+        }
+      ]
+    }
+  },
+  "followups": [
+    {
+      "synthetic": true,
+      "id": "SYNTHETIC-FOLLOWUP-001",
+      "source": "jira",
+      "record_id": "SYNTHETIC-JIRA-001",
+      "owner": "DEMO-PSIRT (example only)",
+      "action": "Request exact demo build manifest and patch evidence; no impact decision.",
+      "checkpoint": "2026-10-19T10:00:00+08:00",
+      "blocker": "Demo build / patch evidence unavailable",
+      "dates": {
+        "reply": "2026-10-19T10:00:00+08:00",
+        "remediation": null,
+        "verification": null,
+        "release": null
+      }
+    }
+  ]
+}

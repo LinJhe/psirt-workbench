@@ -1,0 +1,12 @@
+{
+  "scope_version": "synthetic-scope/1",
+  "window_start": "2026-10-12T00:00:00+08:00",
+  "jira_project": "DEMO",
+  "sample_issues": [],
+  "dt_base": "https://dt.example.invalid",
+  "dt_projects": [],
+  "dt_scope_note": "Synthetic example only; no company data",
+  "sf_owner": "DEMO",
+  "sf_explicit_cases": [],
+  "weekly_page": "0"
+}

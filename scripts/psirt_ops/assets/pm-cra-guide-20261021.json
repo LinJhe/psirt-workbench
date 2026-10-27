@@ -1,0 +1,93 @@
+{
+  "schema": "psirt-pm-cra-guide/1",
+  "version": "share-edition/1",
+  "title": "PSIRT 流程與交付指南",
+  "subtitle": "通用說明模型；不是任何組織已核准的流程、SLA 或法遵判定。",
+  "authority": "分享版範例。角色、期限、法律適用性與核准權責均由使用組織確認。",
+  "sources": [
+    {
+      "id": "F1",
+      "title": "FIRST PSIRT Services Framework",
+      "url": "https://www.first.org/standards/frameworks/psirts/psirt_services_framework_v1-1",
+      "note": "公開參考入口；本頁未即時重查，請依適用版本覆核。"
+    }
+  ],
+  "stages": [
+    {
+      "id": "A",
+      "title": "收件與界定",
+      "input": "來源、時間、產品與版本",
+      "output": "建立範圍與待確認清單",
+      "boundary": "接收人待確認；不得自動當成正式立案",
+      "sources": [
+        "F1"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "分析與取證",
+      "input": "元件、利用條件、來源可靠性",
+      "output": "區分事實、假設與缺口",
+      "boundary": "產品影響由權責者覆核",
+      "sources": [
+        "F1"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "處置與承接",
+      "input": "可行修補或緩解選項",
+      "output": "確認交付物、承接及日期依據",
+      "boundary": "未取得承諾的期限標待確認",
+      "sources": [
+        "F1"
+      ]
+    },
+    {
+      "id": "D",
+      "title": "開發與驗證",
+      "input": "可識別的 build、修正與測試條件",
+      "output": "保留自測與指定驗證的獨立證據",
+      "boundary": "自測成功不等於全部交付物完成",
+      "sources": [
+        "F1"
+      ]
+    },
+    {
+      "id": "E",
+      "title": "交付與溝通",
+      "input": "驗證結果、適用對象與發布安排",
+      "output": "準備可覆核的溝通草稿",
+      "boundary": "不自動寄信、修改正式工單或發布",
+      "sources": [
+        "F1"
+      ]
+    },
+    {
+      "id": "F",
+      "title": "覆核與收束",
+      "input": "完成條件、剩餘風險與承接",
+      "output": "確認處置理由及重新評估條件",
+      "boundary": "Done 不是所有產品均修復的證明",
+      "sources": [
+        "F1"
+      ]
+    },
+    {
+      "id": "G",
+      "title": "回饋與改善",
+      "input": "可追溯的時間與交付紀錄",
+      "output": "分析瓶頸，改善輸入品質與流程",
+      "boundary": "沒有基線就不宣稱節省比例或風險下降",
+      "sources": [
+        "F1"
+      ]
+    }
+  ],
+  "compliance": [
+    "先確認產品、市場、法律角色與適用規範。",
+    "由指定權責者確認觸發事件、知悉時間、回應期限及通報途徑。",
+    "本機追蹤日期、外部公告日期與正式法律期限分開保存；不得互相替代。",
+    "資料不足時列待確認，不自行填入時限、風險接受或通報結論。"
+  ]
+}

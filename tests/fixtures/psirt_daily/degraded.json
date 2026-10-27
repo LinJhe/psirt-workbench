@@ -1,0 +1,113 @@
+{
+  "schema_version": "psirt-daily-gate1/1",
+  "synthetic": true,
+  "description": "All CVEs, products, people, states and dates are fabricated test data. NOT FOR PRODUCTION.",
+  "sources": {
+    "kev": {
+      "synthetic": true,
+      "mode": "fixture",
+      "status": "SUCCESS",
+      "observed_at": "2026-10-16T09:00:00+08:00",
+      "source_updated_at": "2026-10-16T08:30:00+08:00",
+      "scope": {
+        "dataset": "synthetic-demo-only",
+        "selection": "kev-all-demo-records"
+      },
+      "source_version": "synthetic-kev-json/1",
+      "schema_version": "fixture-records/1",
+      "rule_version": "demo-filter/1",
+      "completeness": {
+        "complete": true,
+        "expected_count": 2,
+        "pages_received": 1,
+        "pagination_exhausted": true
+      },
+      "raw": {
+        "catalogVersion": "synthetic-release-2",
+        "dateReleased": "2026-10-16T00:30:00Z",
+        "count": 2,
+        "vulnerabilities": [
+          {
+            "cveID": "CVE-2099-90001",
+            "product": "SYNTHETIC-DEMO",
+            "notes": "new synthetic note",
+            "dateAdded": "2026-10-15"
+          },
+          {
+            "cveID": "CVE-2099-90003",
+            "product": "SYNTHETIC-ADDED-DEMO"
+          }
+        ]
+      }
+    },
+    "dt": {
+      "synthetic": true,
+      "mode": "fixture",
+      "status": "FAILED",
+      "observed_at": "2026-10-16T09:00:00+08:00",
+      "source_updated_at": "2026-10-16T08:30:00+08:00",
+      "scope": {
+        "dataset": "synthetic-demo-only",
+        "selection": "dt-all-demo-records"
+      },
+      "source_version": "synthetic-dt-5.1.1",
+      "schema_version": "fixture-records/1",
+      "rule_version": "demo-filter/1",
+      "completeness": {
+        "complete": false,
+        "expected_count": null,
+        "pages_received": 0,
+        "pagination_exhausted": false
+      },
+      "raw": null
+    },
+    "jira": {
+      "synthetic": true,
+      "mode": "fixture",
+      "status": "PARTIAL",
+      "observed_at": "2026-10-16T09:00:00+08:00",
+      "source_updated_at": "2026-10-16T08:30:00+08:00",
+      "scope": {
+        "dataset": "synthetic-demo-only",
+        "selection": "jira-all-demo-records"
+      },
+      "source_version": "synthetic-jira-contract/1",
+      "schema_version": "fixture-records/1",
+      "rule_version": "demo-filter/1",
+      "completeness": {
+        "complete": false,
+        "expected_count": 2,
+        "pages_received": 1,
+        "pagination_exhausted": false
+      },
+      "raw": [
+        {
+          "id": "SYNTHETIC-JIRA-001",
+          "status_raw": "In Progress",
+          "owner": "DEMO-RD (not a real assignment)",
+          "comments": [
+            "Synthetic request for build evidence; status unchanged"
+          ]
+        }
+      ]
+    }
+  },
+  "followups": [
+    {
+      "synthetic": true,
+      "id": "SYNTHETIC-FOLLOWUP-001",
+      "source": "jira",
+      "record_id": "SYNTHETIC-JIRA-001",
+      "owner": "DEMO-PSIRT (example only)",
+      "action": "Request exact demo build manifest and patch evidence; no impact decision.",
+      "checkpoint": "2026-10-19T10:00:00+08:00",
+      "blocker": "Demo build / patch evidence unavailable",
+      "dates": {
+        "reply": "2026-10-19T10:00:00+08:00",
+        "remediation": null,
+        "verification": null,
+        "release": null
+      }
+    }
+  ]
+}

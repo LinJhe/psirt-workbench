@@ -1,0 +1,337 @@
+{
+  "date": "2026-10-28",
+  "python": "3.13.12",
+  "sqlite": "3.46.1",
+  "test_cases": 382,
+  "passed_tests": 375,
+  "skipped": 7,
+  "reason_for_skips": "Seven optional penguin decoration checks require images intentionally not redistributed.",
+  "modules": [
+    {
+      "module": "test_fetch_kev.py",
+      "tests": 7,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_branding.py",
+      "tests": 8,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_casework.py",
+      "tests": 14,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_casework_pipeline.py",
+      "tests": 3,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_casework_resume.py",
+      "tests": 11,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_companion.py",
+      "tests": 7,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 7
+    },
+    {
+      "module": "test_psirt_daily.py",
+      "tests": 18,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_dashboard.py",
+      "tests": 17,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_dashboard_integration.py",
+      "tests": 4,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_dt_statistics.py",
+      "tests": 10,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_entry_cli.py",
+      "tests": 2,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_entry_rebuild.py",
+      "tests": 3,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_export_adapters.py",
+      "tests": 5,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_fix_r1.py",
+      "tests": 3,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_fix_r1_http.py",
+      "tests": 1,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_fix_r2.py",
+      "tests": 5,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_fix_r3.py",
+      "tests": 12,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_fix_r4.py",
+      "tests": 9,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_fix_r5.py",
+      "tests": 4,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_fix_r5_http.py",
+      "tests": 1,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_fix_r6.py",
+      "tests": 8,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_fix_r6_http.py",
+      "tests": 1,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_html.py",
+      "tests": 7,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_local_service.py",
+      "tests": 5,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_mail_review_store.py",
+      "tests": 11,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_mail_triage.py",
+      "tests": 18,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_mail_triage_http.py",
+      "tests": 8,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_ops.py",
+      "tests": 12,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_refresh.py",
+      "tests": 15,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_refresh_consistency.py",
+      "tests": 4,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_refresh_http.py",
+      "tests": 8,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_refresh_metadata.py",
+      "tests": 12,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_refresh_web.py",
+      "tests": 12,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_resources.py",
+      "tests": 13,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_resources_http.py",
+      "tests": 5,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_sf_auth.py",
+      "tests": 12,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_sf_inbox.py",
+      "tests": 16,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_sf_inbox_http.py",
+      "tests": 5,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_sf_triage.py",
+      "tests": 11,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_sf_weekly_closeout.py",
+      "tests": 8,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_share_guides.py",
+      "tests": 6,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_statistics.py",
+      "tests": 13,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_statistics_layout.py",
+      "tests": 7,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_statistics_reports.py",
+      "tests": 6,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_triage_performance.py",
+      "tests": 7,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "module": "test_psirt_work_page_ui.py",
+      "tests": 8,
+      "status": "PASS",
+      "exit_code": 0,
+      "skipped": 0
+    }
+  ],
+  "live_api_verified": false,
+  "browser_visual_verified": false,
+  "windows_launcher": "PowerShell on Windows, -NoOpen -NoPause: exit 0; isolated WSL loopback URL returned. Physical double-click and browser launch were not exercised.",
+  "original_source_files_changed": 0
+}

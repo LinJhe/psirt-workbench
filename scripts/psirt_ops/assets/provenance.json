@@ -1,0 +1,12 @@
+{
+  "tailwind-2.2.19.min.css": {
+    "url": "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css",
+    "sha256": "b6ad97402eddb903e7a5d7a73ee47a679204efbdda4521a391cbad9df509b932",
+    "bytes": 2934019
+  },
+  "TAILWIND-LICENSE.txt": {
+    "url": "https://raw.githubusercontent.com/tailwindlabs/tailwindcss/v2.2.19/LICENSE",
+    "sha256": "9e3e31668eee20e6583fa578f3b3cea76a94dbd80bf93043f98c123136b25907",
+    "bytes": 1140
+  }
+}

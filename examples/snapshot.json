@@ -1,0 +1,443 @@
+{
+  "capture_schema": "psirt-ops/1",
+  "synthetic": true,
+  "config": {
+    "cutoff": "2026-10-26T09:00:00+08:00",
+    "window_start": "2026-10-19T00:00:00+08:00",
+    "dt_scope_note": "SYNTHETIC: two projects; no evidence that they represent two products",
+    "sample_issues": [],
+    "jira_project": "DEMO",
+    "dt_projects": [
+      "p1",
+      "p2"
+    ],
+    "dt_base": "https://fixture.invalid",
+    "sf_owner": "FIXTURE",
+    "sf_explicit_cases": [],
+    "weekly_page": "FIXTURE",
+    "scope_version": "synthetic-share/1"
+  },
+  "captured_at": "2026-10-26T09:00:00+08:00",
+  "sources": {
+    "kev": {
+      "status": "SUCCESS",
+      "complete": true,
+      "synthetic": true,
+      "scope": {
+        "test": "only"
+      },
+      "source_version": "test/1",
+      "schema_version": "1",
+      "rule_version": "1",
+      "observed_at": "2026-10-18T12:00:00+08:00",
+      "pages": [],
+      "raw": {
+        "catalogVersion": "synthetic/1",
+        "dateReleased": "2026-10-18T12:00:00+08:00",
+        "count": 1,
+        "vulnerabilities": [
+          {
+            "cveID": "CVE-2026-99999",
+            "dateAdded": "2026-10-20",
+            "vendorProject": "Example vendor",
+            "product": "Synthetic component",
+            "vulnerabilityName": "SYNTHETIC vulnerability only",
+            "shortDescription": "Fictional fixture; not a real security advisory."
+          }
+        ]
+      }
+    },
+    "dt": {
+      "status": "SUCCESS",
+      "complete": true,
+      "synthetic": true,
+      "scope": {
+        "instance": "https://fixture.invalid",
+        "project_uuids": [
+          "p1",
+          "p2"
+        ]
+      },
+      "source_version": "test/1",
+      "schema_version": "1",
+      "rule_version": "1",
+      "observed_at": "2026-10-18T12:00:00+08:00",
+      "pages": [],
+      "raw": [
+        {
+          "id": "p1/finding",
+          "project": {
+            "uuid": "p1",
+            "name": "Synthetic board p1",
+            "version": "1"
+          },
+          "component": {
+            "uuid": "shared-local-id",
+            "name": "kernel",
+            "version": "6.1",
+            "purl": "pkg:generic/kernel@6.1"
+          },
+          "vulnerability": {
+            "uuid": "v1",
+            "vulnId": "CVE-2026-99999",
+            "source": "NVD",
+            "severity": "CRITICAL",
+            "description": "Synthetic example"
+          },
+          "analysis": {
+            "state": "NOT_AFFECTED",
+            "isSuppressed": false
+          }
+        },
+        {
+          "id": "p2/finding",
+          "project": {
+            "uuid": "p2",
+            "name": "Synthetic board p2",
+            "version": "1"
+          },
+          "component": {
+            "uuid": "shared-local-id",
+            "name": "kernel",
+            "version": "6.1",
+            "purl": "pkg:generic/kernel@6.1"
+          },
+          "vulnerability": {
+            "uuid": "v1",
+            "vulnId": "CVE-2026-99999",
+            "source": "NVD",
+            "severity": "CRITICAL",
+            "description": "Synthetic example"
+          },
+          "analysis": {
+            "state": "NOT_AFFECTED",
+            "isSuppressed": false
+          }
+        }
+      ],
+      "projects": [
+        {
+          "uuid": "p1",
+          "name": "Synthetic board p1",
+          "version": "1"
+        },
+        {
+          "uuid": "p2",
+          "name": "Synthetic board p2",
+          "version": "1"
+        }
+      ],
+      "components": [
+        {
+          "project_uuid": "p1",
+          "records": [
+            {
+              "uuid": "shared-local-id",
+              "name": "kernel",
+              "version": "6.1",
+              "purl": "pkg:generic/kernel@6.1"
+            }
+          ]
+        },
+        {
+          "project_uuid": "p2",
+          "records": [
+            {
+              "uuid": "shared-local-id",
+              "name": "kernel",
+              "version": "6.1",
+              "purl": "pkg:generic/kernel@6.1"
+            }
+          ]
+        }
+      ]
+    },
+    "jira": {
+      "status": "SUCCESS",
+      "complete": true,
+      "synthetic": true,
+      "scope": {
+        "instance": "https://jira.example.invalid",
+        "project": "DEMO"
+      },
+      "source_version": "test/1",
+      "schema_version": "1",
+      "rule_version": "1",
+      "observed_at": "2026-10-18T12:00:00+08:00",
+      "pages": [],
+      "raw": [
+        {
+          "key": "DEMO-177",
+          "id": "DEMO-177",
+          "fields": {
+            "summary": "Synthetic DEMO-177",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "key": "indeterminate"
+              }
+            },
+            "assignee": {
+              "displayName": "DEMO RD"
+            },
+            "created": "2020-01-01T00:00:00+08:00",
+            "updated": "2026-10-26T09:00:00+08:00"
+          }
+        },
+        {
+          "key": "DEMO-179",
+          "id": "DEMO-179",
+          "fields": {
+            "summary": "Synthetic DEMO-179",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "key": "indeterminate"
+              }
+            },
+            "assignee": {
+              "displayName": "DEMO RD"
+            },
+            "created": "2020-01-01T00:00:00+08:00",
+            "updated": "2026-10-26T09:00:00+08:00"
+          }
+        },
+        {
+          "key": "DEMO-180",
+          "id": "DEMO-180",
+          "fields": {
+            "summary": "SYNTHETIC completed verification",
+            "status": {
+              "name": "Done",
+              "statusCategory": {
+                "key": "done"
+              }
+            },
+            "assignee": {
+              "displayName": "DEMO reviewer"
+            },
+            "created": "2026-10-19T09:00:00+08:00",
+            "updated": "2026-10-26T09:00:00+08:00"
+          }
+        }
+      ]
+    },
+    "salesforce": {
+      "status": "SUCCESS",
+      "complete": true,
+      "synthetic": true,
+      "scope": {
+        "test": "only",
+        "instance": "https://synthetic-mail-review.invalid",
+        "email_window_start": "2026-10-19T00:00:00+08:00"
+      },
+      "source_version": "test/1",
+      "schema_version": "1",
+      "rule_version": "1",
+      "observed_at": "2026-10-26T09:00:00+08:00",
+      "pages": [],
+      "raw": [
+        {
+          "Id": "case-report",
+          "id": "case-report",
+          "CaseNumber": "Q-DEMO-90000",
+          "Subject": "DEMO vulnerability report",
+          "Status": "New",
+          "IsClosed": false,
+          "Owner": {
+            "Name": "SYNTHETIC queue"
+          },
+          "CreatedDate": "2026-10-19T18:00:00+08:00",
+          "LastModifiedDate": "2026-10-26T08:00:00+08:00"
+        },
+        {
+          "Id": "case-question",
+          "id": "case-question",
+          "CaseNumber": "Q-DEMO-90001",
+          "Subject": "DEMO bounty and technical follow-up",
+          "Status": "New",
+          "IsClosed": false,
+          "Owner": {
+            "Name": "SYNTHETIC queue"
+          },
+          "CreatedDate": "2026-10-19T18:00:00+08:00",
+          "LastModifiedDate": "2026-10-26T08:00:00+08:00"
+        },
+        {
+          "Id": "case-notice",
+          "id": "case-notice",
+          "CaseNumber": "Q-DEMO-90002",
+          "Subject": "DEMO system notification",
+          "Status": "New",
+          "IsClosed": false,
+          "Owner": {
+            "Name": "SYNTHETIC queue"
+          },
+          "CreatedDate": "2026-10-19T18:00:00+08:00",
+          "LastModifiedDate": "2026-10-26T08:00:00+08:00"
+        },
+        {
+          "Id": "case-advert",
+          "id": "case-advert",
+          "CaseNumber": "Q-DEMO-90003",
+          "Subject": "DEMO webinar invitation",
+          "Status": "New",
+          "IsClosed": false,
+          "Owner": {
+            "Name": "SYNTHETIC queue"
+          },
+          "CreatedDate": "2026-10-19T18:00:00+08:00",
+          "LastModifiedDate": "2026-10-26T08:00:00+08:00"
+        },
+        {
+          "Id": "case-encrypted",
+          "id": "case-encrypted",
+          "CaseNumber": "Q-DEMO-90004",
+          "Subject": "DEMO encrypted material",
+          "Status": "New",
+          "IsClosed": false,
+          "Owner": {
+            "Name": "SYNTHETIC queue"
+          },
+          "CreatedDate": "2026-10-19T18:00:00+08:00",
+          "LastModifiedDate": "2026-10-26T08:00:00+08:00"
+        },
+        {
+          "Id": "case-html",
+          "id": "case-html",
+          "CaseNumber": "Q-DEMO-90005",
+          "Subject": "DEMO HTML-only inquiry",
+          "Status": "New",
+          "IsClosed": false,
+          "Owner": {
+            "Name": "SYNTHETIC queue"
+          },
+          "CreatedDate": "2026-10-19T18:00:00+08:00",
+          "LastModifiedDate": "2026-10-26T08:00:00+08:00"
+        },
+        {
+          "Id": "case-quoted",
+          "id": "case-quoted",
+          "CaseNumber": "Q-DEMO-90006",
+          "Subject": "DEMO quoted history",
+          "Status": "New",
+          "IsClosed": false,
+          "Owner": {
+            "Name": "SYNTHETIC queue"
+          },
+          "CreatedDate": "2026-10-19T18:00:00+08:00",
+          "LastModifiedDate": "2026-10-26T08:00:00+08:00"
+        }
+      ],
+      "emails": [
+        {
+          "Id": "mail-report",
+          "ParentId": "case-report",
+          "Incoming": true,
+          "Subject": "DEMO vulnerability report",
+          "TextBody": "Example board v1.0 has a buffer overflow. A public PoC exists; this is an unverified reporter claim.",
+          "MessageDate": "2026-10-19T20:00:00+08:00",
+          "Status": "0"
+        },
+        {
+          "Id": "mail-question",
+          "ParentId": "case-question",
+          "Incoming": true,
+          "Subject": "DEMO bounty and technical follow-up",
+          "TextBody": "What is the bounty range? Has the engineering team reproduced the issue?",
+          "MessageDate": "2026-10-19T20:00:00+08:00",
+          "Status": "0"
+        },
+        {
+          "Id": "mail-notice",
+          "ParentId": "case-notice",
+          "Incoming": true,
+          "Subject": "DEMO system notification",
+          "TextBody": "System notification: quarantine may contain a researcher message. Please inspect the quarantine.",
+          "MessageDate": "2026-10-19T20:00:00+08:00",
+          "Status": "0"
+        },
+        {
+          "Id": "mail-advert",
+          "ParentId": "case-advert",
+          "Incoming": true,
+          "Subject": "DEMO webinar invitation",
+          "TextBody": "Marketing webinar invitation. Unsubscribe from this promotion.",
+          "MessageDate": "2026-10-19T20:00:00+08:00",
+          "Status": "0"
+        },
+        {
+          "Id": "mail-encrypted",
+          "ParentId": "case-encrypted",
+          "Incoming": true,
+          "Subject": "DEMO encrypted material",
+          "TextBody": "-----BEGIN PGP MESSAGE-----\nSYNTHETIC_CIPHERTEXT\n-----END PGP MESSAGE-----",
+          "MessageDate": "2026-10-19T20:00:00+08:00",
+          "Status": "0",
+          "HasAttachment": true
+        },
+        {
+          "Id": "mail-html",
+          "ParentId": "case-html",
+          "Incoming": true,
+          "Subject": "DEMO HTML-only inquiry",
+          "TextBody": null,
+          "MessageDate": "2026-10-19T20:00:00+08:00",
+          "Status": "0",
+          "HtmlBody": "<p>What is the PGP public key?</p><img src=\"https://tracking.invalid/probe\"><script>window.mailExecuted=1</script>"
+        },
+        {
+          "Id": "mail-quoted",
+          "ParentId": "case-quoted",
+          "Incoming": true,
+          "Subject": "DEMO quoted history",
+          "TextBody": "Any update on the report?\nOn Monday Example wrote:\nCritical vulnerability. We disclose tomorrow.",
+          "MessageDate": "2026-10-19T20:00:00+08:00",
+          "Status": "0"
+        },
+        {
+          "Id": "auto-reply",
+          "ParentId": "case-report",
+          "Incoming": false,
+          "Subject": "Re: DEMO correspondence",
+          "TextBody": "Automatic reply: your report has been received.",
+          "MessageDate": "2026-10-19T20:01:00+08:00",
+          "Status": "3"
+        },
+        {
+          "Id": "human-partial",
+          "ParentId": "case-question",
+          "Incoming": false,
+          "Subject": "Re: DEMO correspondence",
+          "TextBody": "The bounty range follows the published policy. The technical question remains open.",
+          "MessageDate": "2026-10-20T09:00:00+08:00",
+          "Status": "3"
+        },
+        {
+          "Id": "draft-reply",
+          "ParentId": "case-question",
+          "Incoming": false,
+          "Subject": "Re: DEMO correspondence",
+          "TextBody": "Draft: technical analysis is still pending.",
+          "MessageDate": "2026-10-20T10:00:00+08:00",
+          "Status": "5"
+        },
+        {
+          "Id": "before-incoming",
+          "ParentId": "case-question",
+          "Incoming": false,
+          "Subject": "Re: DEMO correspondence",
+          "TextBody": "An older outgoing message cannot answer a later question.",
+          "MessageDate": "2026-10-19T09:00:00+08:00",
+          "Status": "3"
+        }
+      ]
+    }
+  },
+  "weekly_template": {
+    "status": "FAILED"
+  },
+  "background": {
+    "rows": []
+  }
+}

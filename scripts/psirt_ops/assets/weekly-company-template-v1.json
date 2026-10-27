@@ -1,0 +1,182 @@
+{
+  "schema": "company-weekly-template/1",
+  "reference_sha256": null,
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "📅 會議基本資訊"
+    },
+    {
+      "type": "table",
+      "key": "meeting",
+      "headers": [
+        "項目",
+        "內容"
+      ],
+      "rows": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "🎯 會議目的與角色職責 (R&R)"
+    },
+    {
+      "type": "paragraph",
+      "text": "會議目的："
+    },
+    {
+      "type": "list",
+      "items": [
+        "檢視目前已通報與內部發現之產品弱點狀態。",
+        "追蹤 SBOM / HBOM 弱點與改善進度。",
+        "協調跨部門修補、驗證、揭露與對外溝通事項。",
+        "宣導外部資安事件與教育訓練機會。"
+      ]
+    },
+    {
+      "type": "table",
+      "key": "roles",
+      "headers": [
+        "角色",
+        "職責"
+      ],
+      "rows": [
+        [
+          "PSIRT",
+          "整理來源與證據，協調處置；正式權限待組織確認。"
+        ],
+        [
+          "RD",
+          "提供技術分析、修補與自測證據；承接需確認。"
+        ],
+        [
+          "PM / Reviewer",
+          "協調交付與驗證；指派與核准權限待確認。"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "📝 議程與會議紀要"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "A. 已通報弱點追蹤 (Reported Vulnerabilities)"
+    },
+    {
+      "type": "table",
+      "key": "reported",
+      "headers": [
+        "工單",
+        "SF Case",
+        "摘要",
+        "狀態",
+        "負責人",
+        "最後異動"
+      ],
+      "rows": []
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "B. 產品 SBOM 弱點追蹤"
+    },
+    {
+      "type": "table",
+      "key": "sbom",
+      "headers": [
+        "判定",
+        "件數",
+        "說明"
+      ],
+      "rows": []
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "KEV"
+    },
+    {
+      "type": "table",
+      "key": "kev",
+      "headers": [
+        "cveID",
+        "vendorProject",
+        "product",
+        "vulnerabilityName",
+        "dateAdded",
+        "dueDate",
+        "DT 命中專案候選（非受影響判定）"
+      ],
+      "rows": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "📋 Jira 工單盤點 （快照範圍）"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. 未結案（Unknown）",
+      "key": "jira_count"
+    },
+    {
+      "type": "table",
+      "key": "jira_open",
+      "headers": [
+        "工單",
+        "摘要",
+        "優先級",
+        "狀態",
+        "負責人",
+        "最後異動"
+      ],
+      "rows": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "📢 外部資安事件與教育宣導 (Other Topics)"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. 外部資安事件宣導"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. 資安教育訓練機會"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. 議題討論事項"
+    },
+    {
+      "type": "paragraph",
+      "text": ""
+    }
+  ],
+  "meeting_labels": [
+    "會議日期 (Date)",
+    "會議時間 (Time)",
+    "會議地點 / 連結",
+    "主席 (Host)",
+    "紀錄 (Recorder)",
+    "出席人員 (Attendees)"
+  ],
+  "sbom_labels": [
+    "IN_TRIAGE（評估中）",
+    "EXPLOITABLE（處理中）",
+    "NOT_AFFECTED＋FALSE_POSITIVE",
+    "RESOLVED",
+    "未判定"
+  ],
+  "location": "Teams",
+  "edition": "generic-share-example; not an approved organization template"
+}

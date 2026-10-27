@@ -1,0 +1,40 @@
+/* Scoped to Salesforce/casework; the home page and brand assets are untouched. */
+.psirt-work-page .page-head{min-height:0;margin-top:16px;padding:12px 24px 13px}
+.psirt-work-page .page-head .head-top{display:none}
+.psirt-work-page .page-head .eyebrow,.psirt-work-page .page-head .edition{font-size:9px;line-height:1.3}
+.psirt-work-page .page-head .edition{padding:2px 7px}
+.psirt-work-page .page-head .ops-kicker{display:none}
+.psirt-work-page .page-head h1,.psirt-work-page .page-head h1.psirt-brand-title{font-size:26px;line-height:1.15;margin:6px 0;width:100%;max-width:100%;min-height:0}
+.psirt-work-page .page-head p,.psirt-work-page .page-head p:last-of-type{font-size:12px;line-height:1.4;margin:3px 0;width:100%;max-width:100%;overflow-wrap:anywhere}
+.psirt-work-page .page-head p:first-of-type:not(:last-of-type){display:none}
+.psirt-work-page .page-head .garden-art{width:54%;opacity:.8}
+.psirt-work-page .page-head .ops-circuit{height:60px;width:70px;top:auto;bottom:8px;opacity:.12}
+.psirt-work-page main{padding-top:12px;min-width:0}
+.psirt-work-page main>section{margin-top:12px;padding:18px 22px;min-width:0}
+.psirt-work-page main>section>h2{font-size:22px;margin:0 0 8px;line-height:1.4}
+.psirt-work-page .work-page-title{display:flex;align-items:center;gap:10px 18px;flex-wrap:wrap}
+.psirt-work-page .work-page-title h2{font-size:22px;line-height:1.4;margin:0}
+.psirt-work-page .work-synthetic{color:#ffc5d2;background:#52263366;border:1px solid #a2526977;border-radius:5px;font-size:12px;padding:3px 8px}
+.psirt-work-page .work-mode{font-size:12px;color:#e1c2ff}
+.psirt-work-page .dt-status{margin:6px 0;line-height:1.55;font-size:12px}
+.psirt-work-page .work-run-evidence{font-size:12px;margin:6px 0;padding:6px 10px}
+.psirt-work-page .psirt-refresh{margin-bottom:10px;padding:9px 12px;font-size:12px}
+.psirt-work-page .psirt-refresh p{margin:3px 0}
+.psirt-work-page .psirt-refresh button{padding:4px 8px}
+.psirt-work-page .psirt-refresh details{padding:4px 8px;margin:5px 0 0}
+.psirt-work-page main :is(section,div,details,fieldset,form){min-width:0}
+.psirt-work-page :is(summary,a,button,input,select,textarea):focus-visible{outline:2px solid #abe0d3;outline-offset:3px}
+.psirt-work-page main p{overflow-wrap:anywhere}
+@media(max-width:850px){
+ .psirt-work-page .page-head{min-height:0;margin:12px 12px 0;padding:12px 14px}
+ .psirt-work-page .page-head h1,.psirt-work-page .page-head h1.psirt-brand-title{font-size:24px}
+ .psirt-work-page .page-head .garden-art{width:100%;opacity:.55}
+ .psirt-work-page main{margin:0;padding:12px 12px 32px}
+ .psirt-work-page main>section{padding:14px 12px;max-width:100%}
+ .psirt-work-page .sidebar{padding:12px 16px;min-width:0}
+ .psirt-work-page .sidebar nav{margin-top:12px;gap:4px}
+ .psirt-work-page .sidebar nav a{padding:7px 8px;overflow-wrap:anywhere}
+ .psirt-work-page :is(input,select,textarea){box-sizing:border-box;max-width:100%}
+ .psirt-work-page .psirt-refresh{max-width:100%}
+}
+@media print{.psirt-work-page .page-head{margin:0;min-height:0;padding:10px}.psirt-work-page main{margin:0}}

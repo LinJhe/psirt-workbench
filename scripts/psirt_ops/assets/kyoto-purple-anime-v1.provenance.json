@@ -1,0 +1,13 @@
+{
+  "title": "Kyoto garden — purple animation illustration",
+  "source_title": "Japanese Garden, Kyoto (16477259292)",
+  "author": "Mustang Joe / Joe deSousa",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Japanese_Garden,_Kyoto_(16477259292).jpg",
+  "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Japanese_Garden%2C_Kyoto_%2816477259292%29.jpg",
+  "source_license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_file": "kyoto-garden-reference-cc0.jpg",
+  "generated_file": "kyoto-purple-anime-v1.png",
+  "method": "Built-in image_gen; style-transfer of the downloaded photograph; static illustration",
+  "prompt": "Use case: style-transfer. Edit target: the supplied CC0 photograph of a real Japanese garden in Kyoto. Transform this photo into a beautifully detailed hand-painted Japanese animation background illustration, not a photograph or a flat vector drawing. Preserve the recognizable composition of sculpted pine trees, rocky islands, quiet pond and reflections, with foreground pine at the left and island on the right. Landscape 16:9. Palette: elegant lavender, wisteria purple, deep plum shadows, pale lilac light, with subtle muted natural greens; softly luminous dusk, tranquil and sophisticated, painterly gouache textures, delicately drawn pine needles, water reflections and layered atmospheric depth. Intended as the header art in a personal purple Japanese-garden themed dashboard. Fill the frame with scenery; no UI, no text, no watermark, no people, no added buildings or fantasy characters. This is a static illustration with an anime background-art aesthetic."
+}

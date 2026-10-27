@@ -1,0 +1,12 @@
+{
+  "scope_version": "example-read-only/1",
+  "window_start": "2026-10-19T00:00:00+08:00",
+  "jira_project": "DEMO",
+  "sample_issues": [],
+  "dt_base": "https://dependency-track.example.invalid",
+  "dt_projects": ["00000000-0000-0000-0000-000000000001"],
+  "dt_scope_note": "Example UUID only; replace with explicitly authorized project UUIDs. Not a product or company-wide count.",
+  "sf_owner": "EXAMPLE",
+  "sf_explicit_cases": [],
+  "weekly_page": null
+}

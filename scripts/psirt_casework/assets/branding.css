@@ -1,0 +1,5 @@
+/* Only the page-head wordmark uses the locally embedded blackletter face. */
+@font-face{font-family:"UnifrakturCook";src:url("__PSIRT_BRAND_FONT_DATA__") format("truetype");font-style:normal;font-weight:700;font-display:swap}
+.page-head h1.psirt-brand-title{font-family:"UnifrakturCook",Georgia,"Times New Roman",serif;font-style:normal;font-weight:700;font-size:50px;line-height:1.22;letter-spacing:.012em;color:#f1e7ff;text-shadow:0 2px 22px #b996ed29;margin:15px 0 16px;padding:0;width:100%;max-width:100%;white-space:normal;overflow-wrap:break-word;word-break:normal;hyphens:none;font-synthesis:none}
+@media(max-width:650px){.page-head h1.psirt-brand-title{font-size:32px;line-height:1.28;letter-spacing:.005em;margin-top:15px;margin-bottom:14px}}
+@media print{.page-head h1.psirt-brand-title{color:#20182a;text-shadow:none}}

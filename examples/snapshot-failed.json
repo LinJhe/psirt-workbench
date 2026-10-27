@@ -1,0 +1,261 @@
+{
+  "capture_schema": "psirt-ops/1",
+  "synthetic": true,
+  "config": {
+    "cutoff": "2026-10-26T10:00:00+08:00",
+    "window_start": "2026-10-19T00:00:00+08:00",
+    "dt_scope_note": "SYNTHETIC: two projects; no evidence that they represent two products",
+    "sample_issues": [],
+    "jira_project": "DEMO",
+    "dt_projects": [
+      "p1",
+      "p2"
+    ],
+    "dt_base": "https://fixture.invalid",
+    "sf_owner": "FIXTURE",
+    "sf_explicit_cases": [],
+    "weekly_page": "FIXTURE",
+    "scope_version": "synthetic-share/1"
+  },
+  "captured_at": "2026-10-26T10:00:00+08:00",
+  "sources": {
+    "kev": {
+      "status": "SUCCESS",
+      "complete": true,
+      "synthetic": true,
+      "scope": {
+        "test": "only"
+      },
+      "source_version": "test/1",
+      "schema_version": "1",
+      "rule_version": "1",
+      "observed_at": "2026-10-18T12:00:00+08:00",
+      "pages": [],
+      "raw": {
+        "catalogVersion": "synthetic/1",
+        "dateReleased": "2026-10-18T12:00:00+08:00",
+        "count": 1,
+        "vulnerabilities": [
+          {
+            "cveID": "CVE-2026-99999",
+            "dateAdded": "2026-10-20",
+            "vendorProject": "Example vendor",
+            "product": "Synthetic component",
+            "vulnerabilityName": "SYNTHETIC vulnerability only",
+            "shortDescription": "Fictional fixture; not a real security advisory."
+          }
+        ]
+      }
+    },
+    "dt": {
+      "status": "SUCCESS",
+      "complete": true,
+      "synthetic": true,
+      "scope": {
+        "instance": "https://fixture.invalid",
+        "project_uuids": [
+          "p1",
+          "p2"
+        ]
+      },
+      "source_version": "test/1",
+      "schema_version": "1",
+      "rule_version": "1",
+      "observed_at": "2026-10-18T12:00:00+08:00",
+      "pages": [],
+      "raw": [
+        {
+          "id": "p1/finding",
+          "project": {
+            "uuid": "p1",
+            "name": "Synthetic board p1",
+            "version": "1"
+          },
+          "component": {
+            "uuid": "shared-local-id",
+            "name": "kernel",
+            "version": "6.1",
+            "purl": "pkg:generic/kernel@6.1"
+          },
+          "vulnerability": {
+            "uuid": "v1",
+            "vulnId": "CVE-2026-99999",
+            "source": "NVD",
+            "severity": "CRITICAL",
+            "description": "Synthetic example"
+          },
+          "analysis": {
+            "state": "NOT_AFFECTED",
+            "isSuppressed": false
+          }
+        },
+        {
+          "id": "p2/finding",
+          "project": {
+            "uuid": "p2",
+            "name": "Synthetic board p2",
+            "version": "1"
+          },
+          "component": {
+            "uuid": "shared-local-id",
+            "name": "kernel",
+            "version": "6.1",
+            "purl": "pkg:generic/kernel@6.1"
+          },
+          "vulnerability": {
+            "uuid": "v1",
+            "vulnId": "CVE-2026-99999",
+            "source": "NVD",
+            "severity": "CRITICAL",
+            "description": "Synthetic example"
+          },
+          "analysis": {
+            "state": "NOT_AFFECTED",
+            "isSuppressed": false
+          }
+        }
+      ],
+      "projects": [
+        {
+          "uuid": "p1",
+          "name": "Synthetic board p1",
+          "version": "1"
+        },
+        {
+          "uuid": "p2",
+          "name": "Synthetic board p2",
+          "version": "1"
+        }
+      ],
+      "components": [
+        {
+          "project_uuid": "p1",
+          "records": [
+            {
+              "uuid": "shared-local-id",
+              "name": "kernel",
+              "version": "6.1",
+              "purl": "pkg:generic/kernel@6.1"
+            }
+          ]
+        },
+        {
+          "project_uuid": "p2",
+          "records": [
+            {
+              "uuid": "shared-local-id",
+              "name": "kernel",
+              "version": "6.1",
+              "purl": "pkg:generic/kernel@6.1"
+            }
+          ]
+        }
+      ]
+    },
+    "jira": {
+      "status": "SUCCESS",
+      "complete": true,
+      "synthetic": true,
+      "scope": {
+        "instance": "https://jira.example.invalid",
+        "project": "DEMO"
+      },
+      "source_version": "test/1",
+      "schema_version": "1",
+      "rule_version": "1",
+      "observed_at": "2026-10-18T12:00:00+08:00",
+      "pages": [],
+      "raw": [
+        {
+          "key": "DEMO-177",
+          "id": "DEMO-177",
+          "fields": {
+            "summary": "Synthetic DEMO-177",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "key": "indeterminate"
+              }
+            },
+            "assignee": {
+              "displayName": "DEMO RD"
+            },
+            "created": "2020-01-01T00:00:00+08:00",
+            "updated": "2026-10-26T09:00:00+08:00"
+          }
+        },
+        {
+          "key": "DEMO-179",
+          "id": "DEMO-179",
+          "fields": {
+            "summary": "Synthetic DEMO-179",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "key": "indeterminate"
+              }
+            },
+            "assignee": {
+              "displayName": "DEMO RD"
+            },
+            "created": "2020-01-01T00:00:00+08:00",
+            "updated": "2026-10-26T09:00:00+08:00"
+          }
+        },
+        {
+          "key": "DEMO-180",
+          "id": "DEMO-180",
+          "fields": {
+            "summary": "SYNTHETIC completed verification",
+            "status": {
+              "name": "Done",
+              "statusCategory": {
+                "key": "done"
+              }
+            },
+            "assignee": {
+              "displayName": "DEMO reviewer"
+            },
+            "created": "2026-10-19T09:00:00+08:00",
+            "updated": "2026-10-26T09:00:00+08:00"
+          }
+        }
+      ]
+    },
+    "salesforce": {
+      "status": "FAILED",
+      "complete": false,
+      "synthetic": true,
+      "scope": {
+        "test": "only",
+        "instance": "https://synthetic-mail-review.invalid",
+        "email_window_start": "2026-10-19T00:00:00+08:00"
+      },
+      "source_version": "test/1",
+      "schema_version": "1",
+      "rule_version": "1",
+      "observed_at": "2026-10-26T10:00:00+08:00",
+      "pages": [],
+      "raw": null,
+      "emails": [],
+      "attempted": true,
+      "attempted_at": "2026-10-26T10:00:00+08:00",
+      "auth_blocked": true,
+      "auth_blocked_at": "2026-10-26T10:00:00+08:00",
+      "auth_error_code": "INVALID_OPERATION_WITH_EXPIRED_PASSWORD",
+      "errors": [
+        {
+          "type": "HTTPError",
+          "http_status": 401,
+          "error_code": "INVALID_OPERATION_WITH_EXPIRED_PASSWORD"
+        }
+      ]
+    }
+  },
+  "weekly_template": {
+    "status": "FAILED"
+  },
+  "background": {
+    "rows": []
+  }
+}
